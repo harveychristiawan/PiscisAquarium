@@ -1,0 +1,237 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+header{
+    height: 17vh;
+    width: 100%;
+    background-image: linear-gradient(to right, rgba(29, 184, 245, 0.703), rgba(7, 23, 94, 0.8)), url(Assets/underwater\ background.jpg); 
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-weight: 600;
+    position: absolute;
+    
+}
+
+.navbar{
+    display: flex;
+    padding-top: 1%;
+    padding-right: 4%;
+    padding-left: 3%;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px  aqua;
+}
+
+.navbar img{
+    width: 400px;
+    margin-left: 0;
+}
+
+.navbar-menu{
+    flex: 1;
+    text-align: right;
+}
+
+.navbar-menu ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 15px 30px;
+    position: relative;
+}
+
+.navbar-menu ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.navbar-menu ul li :hover{
+    color: red;
+    transition: all 0.4s;
+}
+
+.text-box{
+    width: 100%;
+    z-index: 1;
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    position: absolute;
+    top: 43%;
+    padding: 30px 0px 0px 50px;
+    text-align: left;
+    text-shadow: 6px 6px 10px black;
+}
+
+.text-box p{
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+}
+
+.buy-ticket-button{
+    display: inline-block;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    border: 4px solid white;
+    background: linear-gradient(to right, rgba(37, 160, 241, 0.87) 20%, rgba(22, 22, 235, 0.733) 100%);
+    padding: 20px 30px;
+    border-radius: 30px;
+    position: absolute;
+    cursor: pointer;
+  
+}
+
+.buy-ticket-button:hover{
+    border: 2px solid rgba(255, 0, 0, 0.767);
+    background: rgba(255, 0, 0, 0.767);
+    transition: 0.5s;
+}
+
+#background-image{
+    top: 17vh;
+    width: 100%;
+    height: 84vh;
+    position: relative;
+    z-index: 0;
+    opacity: 0.8;
+    background-color: black;
+    filter: brightness(70%);
+}
+
+.animals{
+    position: relative;
+    font-size: 30px;
+    top: 16vh;
+    text-align: center;
+    padding: 6%;
+    background: linear-gradient(to bottom, rgb(0, 0, 105), rgb(9, 95, 95));
+    background-size: cover;
+    
+}
+.animals h1{
+    font-size: 1.5em;
+    color: rgba(30, 255, 30, 0.897);
+}
+.animals p{
+    padding: 22px;
+    line-height: 25px;
+    color: rgb(255, 255, 255);
+}
+.animal-pic{
+    width: 380px;
+    height: 250px;
+    margin: 0 20px;
+    display: inline-block;
+    position: relative;
+}
+
+.animal-pic img{
+    width: 100%;
+    height: 250px;
+    border-radius: 16px;
+    margin-top: 20px;
+    
+}
+
+.wrap{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin-top: 5.3%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    background: rgb(2, 30, 80);
+    overflow: hidden;
+    border-radius: 15px;
+    transition: linear 0.3s;
+    
+}
+
+.desc{
+    position: absolute;
+    text-align: center;
+}
+
+.desc p{
+    opacity: 1;
+    color: white;
+    line-height: 24px;
+}
+
+.animal-pic:hover .wrap{
+    opacity: 0.7;
+}
+.name{
+    font-size: 25px;
+    font-weight: 100;
+    color: rgb(223, 219, 219);
+}
+.see-more-button{
+    position: relative;
+
+    display: inline-block;
+
+    background: transparent;
+    margin: 4%;
+    text-decoration: none;
+    font-size: 25px;
+    border: 3px solid rgb(201, 201, 201);
+    padding: 0.5% 1.5% 0.5% 1.5%;
+    border-radius: 35px;
+    text-align: center;
+    
+}
+.see-more-button a{
+    color: rgb(238, 238, 238);
+    text-decoration: none;
+}
+.see-more-button:hover{
+    background: rgb(63, 241, 19, 0.5);
+    transition: ease-in 0.4s;
+}
+footer{
+    position: relative;
+    text-align: left;
+    padding-top: 20px;
+    height: 15vh;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    top: 13vh;
+    background-image: linear-gradient(rgba(32, 185, 245, 0.8), rgba(12, 115, 156, 0.8)), url(Assets/underwater\ background.jpg);
+    list-style: none;
+}
+.footer h3{
+    text-align: left;
+}
+footer img{
+    position: absolute;
+    margin-left: 50%;
+    top: 30%;
+    width: 45px;
+    height: 45px;
+    text-align: right;
+    align-items: flex-end;
+    float: right;
+    transition: all 0.2s ease-in-out;
+    text-decoration: none;
+}
+footer img:hover{
+    transform: scale(0.9);
+}
+footer ul li{
+    text-align: left;
+    padding: 0px 3rem;
+    display: inline-block;
+}

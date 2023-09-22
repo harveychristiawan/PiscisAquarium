@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buy Tickets</title>
+    <link rel="stylesheet" href="form.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="navbar" >
+            
+            <a href="home.html"><img src="Assets/logo.png" alt="Logo Piscis Aquarium"></a>
+            <div class="navbar-menu">
+                <ul>
+                    <li><a href="home.html">HOME</a></li>
+                    <li><a href="aboutus.html">ABOUT US</a></li>
+                    <li><a href="animals.html">ANIMALS</a></li>
+                    <li><a href="form.html">BUY TICKETS</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <div class="buyticket">
+        <h2>Buy Tickets</h2>
+        <br>
+        <div class="form">
+            <div class="input">
+                <label for="firstname">First Name</label>
+                <input type="text" class="inputbox">
+            </div>
+            <div class="input">
+                <label for="lastname">Last Name</label>
+                <input type="text" class="inputbox">
+            </div>
+            <div class="input">
+                <label for="email">Email</label>
+                <input type="email" class="inputbox">
+            </div>
+            <div class="input">
+                <label for="password">Password</label>
+                <input type="password" class="inputbox">
+            </div>
+            <div class="input">
+                <label for="age">Age</label>
+                <select name="agecheck" id="agecheck">
+                    <option value=""></option>
+                    <option value="adult">Adult (15+ years old)</option>
+                    <option value="Child">Child (3-15 years old)</option>
+                    <option value="Infant">Infant (0-3 years old)</option>
+                </select>
+            </div>
+            <div class="input">
+                <label for="gender">Gender</label>
+                <div class="gender-group">
+                    <label class="radio">
+                        <input type="radio" name="gender" id="male"><span>Male</span>
+                    </label>
+                    <label class="radio">
+                        <input type="radio" name="gender" id="female"><span>Female</span>
+                    </label>
+                </div>
+            </div>
+            <div class="checkbox">
+                <input type="checkbox">
+                <label for="checkbox">I accept the terms & conditions applied</label>
+            </div>
+        </div>
+        <br>
+        <input id="submitbutton" type="button" onclick="alert('Ticket has been bought!')" value="Buy Ticket">
+    </div>
+    <footer>
+        <ul>
+            <li><h3>1600 Pennsylvania Avenue NW <br>
+                Washington, D.C. 20500
+                United States. <br>
+                © 2003 HC Corp
+            </h3></li>
+            <li><a href="https://www.instagram.com/harveych_/"><img src="Assets/instagram.png" alt="instagram"></a></li>
+            <li><a href="https://www.linkedin.com/in/harvey-christiawan-0325a81a7/"><img src="Assets/linked id.png" alt="linked in"></a></li>
+            <li><a href="https://steamcommunity.com/id/stumpydevil/"><img src="Assets/steam.png" alt="steam"></a></li>
+
+        </ul>
+</footer>
+</body>
+</html>

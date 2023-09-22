@@ -1,0 +1,169 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+body{
+    background-image: url(Assets/animal\ background.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: auto;
+}
+
+header{
+    height: 17vh;
+    width: 100%;
+    background-image: linear-gradient(to right, rgba(29, 184, 245, 0.703), rgba(7, 23, 94, 0.8)), url(Assets/underwater\ background.jpg); 
+    /* background-image: linear-gradient(rgb(0, 173, 179), rgb(0, 173, 179)), url(Assets/sealifewallpaper.jpg); */
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* backdrop-filter: blur; */
+    /* border-bottom: 3px solid rgb(44, 228, 228); */
+    font-weight: 600;
+    position: absolute;
+    
+}
+
+.navbar{
+    display: flex;
+    padding-top: 1%;
+    padding-right: 4%;
+    padding-left: 3%;
+    /* padding: 1% 5%; */
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px  aqua;
+}
+
+.navbar img{
+    width: 400px;
+    margin-left: 0;
+}
+
+.navbar-menu{
+    flex: 1;
+    text-align: right;
+}
+
+.navbar-menu ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 15px 30px;
+    position: relative;
+}
+
+.navbar-menu ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.navbar-menu ul li :hover{
+    color: red;
+    transition: all 0.4s;
+}
+
+.animals{
+    position: relative;
+    text-align: center;
+    width: 100%;
+    top: 25vh;
+    color: rgb(0, 0, 0);
+}
+
+.animals h2{
+    font-size: 60px;
+    color: white;
+    text-shadow: 2px 2px 4px black;
+}
+.animals h5{
+    margin-top: 1%;
+    font-size: 30px;
+    font-weight: 400;
+    color: white;
+    text-shadow: 2px 2px 4px black;
+}
+.animal-pic{
+    position: relative;
+    /* margin: 0px 30px; */
+    display: inline-block;
+    text-align: center;
+    margin-top: 5%;
+    width: 80%;
+    margin-bottom: 8%;
+    height: auto;
+}
+
+.animal-pic h4{
+    font-size: 35px;
+    margin: 2%;
+    text-shadow: 1px 1px 5px white;
+}
+.animal-pic p{
+    text-align: justify;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    width: 700px;
+    font-size: 25px;
+    
+}
+
+.animal-pic img{
+    position: relative;
+    width: 550px;
+    height: 350px;
+    border: 2px solid white;
+    border-radius: 4px;
+}
+.animal-footer{
+    position: relative;
+    padding-top: 10%;
+    padding-bottom: 15%;
+}
+.animal-footer h6{
+    font-size: 25px;
+}
+.animal-footer p{
+    font-size: 24px;
+}
+footer{
+    position: relative;
+    text-align: left;
+    padding-top: 20px;
+    height: 15vh;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    top: 10vh;
+    /* background: rgb(0, 173, 179); */
+    background-image: linear-gradient(rgba(32, 185, 245, 0.8), rgba(12, 115, 156, 0.8)), url(Assets/underwater\ background.jpg);
+    list-style: none;
+}
+.footer h3{
+    text-align: left;
+}
+footer img{
+    position: absolute;
+    margin-left: 50%;
+    top: 30%;
+    width: 45px;
+    height: 45px;
+    text-align: right;
+    align-items: flex-end;
+    float: right;
+    transition: all 0.2s ease-in-out;
+    text-decoration: none;
+}
+footer img:hover{
+    transform: scale(0.9);
+}
+footer ul li{
+    text-align: left;
+    padding: 0px 3rem;
+    display: inline-block;
+}
